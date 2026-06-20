@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SiteChrome } from "@/components/site-chrome";
 
@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "Big smoke, bold flavor, good music, and late-night energy.",
   icons: { icon: "/assets/smoked-logo-cropped.png" },
 };
+
+export const viewport: Viewport = { themeColor: "#080808" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
