@@ -1,0 +1,1 @@
+export default function TermsPage(){return <article className="legal shell"><h1>Terms of service</h1><p>Menu availability, pricing, opening hours, and event schedules may change. Contact the restaurant for current details.</p></article>}

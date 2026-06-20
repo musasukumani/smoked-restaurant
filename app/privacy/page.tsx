@@ -1,0 +1,1 @@
+export default function PrivacyPage(){return <article className="legal shell"><h1>Privacy policy</h1><p>Smoked only collects information you provide through our contact and ordering experiences. We do not sell personal data.</p></article>}
