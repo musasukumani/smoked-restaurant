@@ -9,3 +9,5 @@ out
 .playwright-cli/
 skills/
 output/
+
+.vercel
