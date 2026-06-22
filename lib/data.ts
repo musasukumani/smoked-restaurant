@@ -5,7 +5,7 @@ export const products = [
   { name: "Chips", category: "Sides", price: 89, image: "/assets/img/menu-flame/loaded-smoke-fries-v2.jpg" },
   { name: "Chargrilled Platter", category: "Grill", price: 249, image: "/assets/img/menu-flame/chargrilled-platter.webp" },
   { name: "Spicy Chicken Roll", category: "Chicken", price: 139, image: "/assets/img/menu-flame/spicy-chicken-roll.webp" },
-  { name: "Backyard Beef Ruti", category: "Grill", price: 169, image: "/assets/img/menu-flame/backyard-beef-ruti.webp" },
+  { name: "Beef Sandwich", category: "Grill", price: 169, image: "/assets/img/menu-flame/beef-sandwich.jpg" },
   { name: "Red Pepper Pasta", category: "Pasta", price: 179, image: "/assets/img/menu-flame/red-pepper-pasta.webp" },
   { name: "Double Smoke Burger", category: "Burgers", price: 199, image: "/assets/img/menu-flame/double-smoke-burger.webp" },
 ];
