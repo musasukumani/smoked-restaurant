@@ -15,8 +15,8 @@ export function ShopGrid() {
     if (sort === "high") list.sort((a,b) => b.price-a.price);
     return list;
   }, [category, sort]);
-  return <section className="shop-section shell">
-    <aside className="shop-sidebar"><h2>Categories</h2>{categories.map(item => <button key={item} className={category === item ? "selected" : ""} onClick={() => setCategory(item)}>{item}<span>{item === "All" ? products.length : products.filter(p => p.category === item).length}</span></button>)}<div className="delivery-promo"><p>Free delivery</p><h3>On orders over R500</h3></div></aside>
-    <div className="shop-main"><div className="shop-toolbar"><p>Showing <b>{visible.length}</b> mouthwatering choices</p><label><SlidersHorizontal/><span className="sr-only">Sort menu</span><select value={sort} onChange={e => setSort(e.target.value)}><option value="featured">Default sorting</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div><div className="product-grid">{visible.map(product => <ProductCard key={product.name} product={product}/>)}</div></div>
+  return <section className="shop-section shell" aria-label="Smoked 1804 food menu">
+    <aside className="shop-sidebar"><h2>Categories</h2>{categories.map(item => <button key={item} className={category === item ? "selected" : ""} onClick={() => setCategory(item)}>{item}<span>{item === "All" ? products.length : products.filter(p => p.category === item).length}</span></button>)}<div className="delivery-promo"><p>Planning a visit?</p><h3>Call 069 462 2422</h3></div></aside>
+    <div className="shop-main"><div className="shop-toolbar"><p>Showing <b>{visible.length}</b> menu choices</p><label><SlidersHorizontal/><span className="sr-only">Sort menu</span><select value={sort} onChange={e => setSort(e.target.value)}><option value="featured">Featured first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div><div className="product-grid">{visible.map(product => <ProductCard key={product.name} product={product}/>)}</div></div>
   </section>;
 }
